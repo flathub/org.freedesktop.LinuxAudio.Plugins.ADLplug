@@ -1,11 +1,11 @@
 {
     "id": "org.freedesktop.LinuxAudio.Plugins.ADLplug",
     "runtime": "org.freedesktop.LinuxAudio.BaseExtension",
-    "runtime-version": "19.08",
-    "sdk": "org.freedesktop.Sdk//19.08",
+    "runtime-version": "20.08",
+    "sdk": "org.freedesktop.Sdk//20.08beta",
     "build-extension": true,
     "appstream-compose": false,
-    "branch": "19.08",
+    "branch": "20.08",
     "build-options": {
         "prefix": "/app/extensions/Plugins/ADLplug"
     },
@@ -37,6 +37,10 @@
                     "type": "git",
                     "url": "https://github.com/jpcima/ADLplug/",
                     "tag": "v1.0.2"
+                },
+                {
+                    "type": "patch",
+                    "path": "adlplug-fixes.patch"
                 },
                 {
                     "type": "patch",
@@ -73,6 +77,10 @@
                     "type": "git",
                     "url": "https://github.com/jpcima/ADLplug/",
                     "tag": "v1.0.2"
+                },
+                {
+                    "type": "patch",
+                    "path": "adlplug-fixes.patch"
                 },
                 {
                     "type": "patch",

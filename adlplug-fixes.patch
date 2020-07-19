@@ -1,0 +1,26 @@
+diff --git a/sources/opl3/adl/player.cc b/sources/opl3/adl/player.cc
+index 15f9b08..9dea1b0 100644
+--- a/sources/opl3/adl/player.cc
++++ b/sources/opl3/adl/player.cc
+@@ -3,6 +3,8 @@
+ //    (See accompanying file LICENSE or copy at
+ //          http://www.boost.org/LICENSE_1_0.txt)
+ 
++#include <stdexcept>
++
+ #include "player.h"
+ 
+ void Player::init(unsigned sample_rate)
+diff --git a/sources/opn2/adl/player.cc b/sources/opn2/adl/player.cc
+index bec2459..e0145ab 100644
+--- a/sources/opn2/adl/player.cc
++++ b/sources/opn2/adl/player.cc
+@@ -3,6 +3,8 @@
+ //    (See accompanying file LICENSE or copy at
+ //          http://www.boost.org/LICENSE_1_0.txt)
+ 
++#include <stdexcept>
++
+ #include "player.h"
+ 
+ void Player::init(unsigned sample_rate)

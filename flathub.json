@@ -1,5 +1,6 @@
 {
     "end-of-life": "The branch is deprecated",
+    "end-of-life": "The branch is deprecated",
     "skip-icons-check": true,
     "only-arches": ["x86_64"]
 }

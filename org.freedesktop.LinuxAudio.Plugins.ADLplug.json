@@ -1,11 +1,11 @@
 {
     "id": "org.freedesktop.LinuxAudio.Plugins.ADLplug",
     "runtime": "org.freedesktop.LinuxAudio.BaseExtension",
-    "runtime-version": "21.08",
-    "sdk": "org.freedesktop.Sdk//21.08",
+    "runtime-version": "stable",
+    "sdk": "org.freedesktop.Sdk//22.08",
     "build-extension": true,
     "appstream-compose": false,
-    "branch": "21.08",
+    "branch": "22.08",
     "build-options": {
         "prefix": "/app/extensions/Plugins/ADLplug"
     },
@@ -25,7 +25,6 @@
                 "/lib"
             ],
             "post_install": [
-                "ln -sf vst $FLATPAK_DEST/lxvst",
                 "install -d ${FLATPAK_DEST}/lv2",
                 "install -d ${FLATPAK_DEST}/vst",
                 "mv ${FLATPAK_DEST}/lib/lv2/OPNplug.lv2 ${FLATPAK_DEST}/lv2/",

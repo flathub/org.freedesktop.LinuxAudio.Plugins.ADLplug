@@ -2,10 +2,9 @@
     "id": "org.freedesktop.LinuxAudio.Plugins.ADLplug",
     "runtime": "org.freedesktop.LinuxAudio.BaseExtension",
     "runtime-version": "stable",
-    "sdk": "org.freedesktop.Sdk//23.08",
+    "sdk": "org.freedesktop.Sdk//24.08",
     "build-extension": true,
-    "appstream-compose": false,
-    "branch": "23.08",
+    "branch": "24.08",
     "build-options": {
         "prefix": "/app/extensions/Plugins/ADLplug"
     },
@@ -69,8 +68,7 @@
                 "mv ${FLATPAK_DEST}/lib/vst/*.so ${FLATPAK_DEST}/vst",
                 "strip ${FLATPAK_DEST}/vst/ADLplug.so",
                 "strip ${FLATPAK_DEST}/lv2/ADLplug.lv2/*.so",
-                "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.freedesktop.LinuxAudio.Plugins.ADLplug.metainfo.xml",
-                "appstream-compose --basename=org.freedesktop.LinuxAudio.Plugins.ADLplug --prefix=${FLATPAK_DEST} --origin=flatpak org.freedesktop.LinuxAudio.Plugins.ADLplug"
+                "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.freedesktop.LinuxAudio.Plugins.ADLplug.metainfo.xml"
             ],
             "sources": [
                 {

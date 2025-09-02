@@ -2,9 +2,9 @@
     "id": "org.freedesktop.LinuxAudio.Plugins.ADLplug",
     "runtime": "org.freedesktop.LinuxAudio.BaseExtension",
     "runtime-version": "stable",
-    "sdk": "org.freedesktop.Sdk//24.08",
+    "sdk": "org.freedesktop.Sdk//25.08",
     "build-extension": true,
-    "branch": "24.08",
+    "branch": "25.08",
     "build-options": {
         "prefix": "/app/extensions/Plugins/ADLplug"
     },
@@ -13,6 +13,7 @@
             "name": "opnplug",
             "buildsystem": "cmake-ninja",
             "config-opts": [
+                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
                 "-DCMAKE_BUILD_TYPE=Release",
                 "-DADLplug_Jack=OFF",
                 "-DADLplug_Standalone=OFF",
@@ -51,6 +52,7 @@
             "name": "adlplug",
             "buildsystem": "cmake-ninja",
             "config-opts": [
+                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
                 "-DCMAKE_BUILD_TYPE=Release",
                 "-DADLplug_Jack=OFF",
                 "-DADLplug_Standalone=OFF",
